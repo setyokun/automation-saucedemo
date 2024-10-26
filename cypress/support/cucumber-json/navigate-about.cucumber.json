@@ -1,0 +1,67 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Navigate Item",
+    "line": 1,
+    "id": "navigate-item",
+    "tags": [],
+    "uri": "navigate-about.feature",
+    "elements": [
+      {
+        "id": "navigate-item;navigate-to-about-and-verify-if-it-successfully-navigated-or-not",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Navigate to About and verify if it successfully navigated or not",
+        "tags": [
+          {
+            "name": "@navigateAbout",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User login on the saucedemo site",
+            "result": {
+              "status": "passed",
+              "duration": 8081000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User click on hamburger button",
+            "result": {
+              "status": "passed",
+              "duration": 82000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User navigate to 'About'",
+            "result": {
+              "status": "passed",
+              "duration": 2052000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "User should see about the 'saucelabs'",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

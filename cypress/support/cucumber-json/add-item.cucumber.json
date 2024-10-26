@@ -1,0 +1,67 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Add Item Flow",
+    "line": 1,
+    "id": "add-item-flow",
+    "tags": [],
+    "uri": "add-item.feature",
+    "elements": [
+      {
+        "id": "add-item-flow;add-1-item-to-cart-and-verify-that-item-is-added-to-cart",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Add 1 item to cart and verify that item is added to cart",
+        "tags": [
+          {
+            "name": "@addItem",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User login on the saucedemo site",
+            "result": {
+              "status": "passed",
+              "duration": 3006000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User add 1 item to cart",
+            "result": {
+              "status": "passed",
+              "duration": 264000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "User should see the same item in the cart page",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User should see the icon cart increase to 1",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
