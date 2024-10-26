@@ -37,8 +37,8 @@ automation-saucedemo-comp/
 
 1. **Clone the repository**:
    ```bash
-   git clone <repo_url>
-   cd automation-saucedemo-comp
+   git clone https://github.com/setyokun/automation-saucedemo.git
+   cd automation-saucedemo
    ```
 
 2. **Install dependencies**:
