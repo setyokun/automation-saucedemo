@@ -58,7 +58,7 @@ automation-saucedemo-comp/
 
 ### Run specific tests by tags
    ```bash
-   npx cypress run --env TAGS="@smoke"
+   npx cypress run --env TAGS="@addItem"
    ```
 
 ### Open Cypress GUI for interactive testing
@@ -70,8 +70,7 @@ automation-saucedemo-comp/
 
 After each test run, an HTML report is generated at `./reports/cucumber-htmlreport`. This report includes detailed information on the executed tests, including metadata such as:
 
-- Browser name and version
-- Platform and Node.js version
+- Browser, Platform name and version
 - Test duration and custom run details
 
 ## Cypress Documentation
