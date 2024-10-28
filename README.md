@@ -11,10 +11,12 @@ automation-saucedemo-comp/
 ├── cypress/
 │   ├── e2e/
 │   │   ├── features/               # Cucumber .feature files defining test scenarios
-│   │   ├── step_definitions/       # Step definitions matching .feature steps
-│   │   └── page_objects/           # Page Object Model files for web elements and actions
 │   ├── fixtures/                   # Test data and input files
 │   ├── screenshots/                # Screenshots captured during test execution
+│   ├── support/                    # Support for enabling a centralized location for reusable logic, configurations, and commands. 
+│   │   ├── cucumber-json/          # JsonFile after the test executed
+│   │   ├── step_definitions/       # Step definitions matching .feature steps
+│   │   └── page_objects/           # Page Object Model files for web elements and actions
 │   └── videos/                     # Video recordings of test executions
 │
 ├── reports/
