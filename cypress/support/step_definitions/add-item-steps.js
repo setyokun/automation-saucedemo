@@ -5,7 +5,6 @@ import CartPage from "../page_objects/cartPage";
 let storedText = '';
 
 Given('User login on the saucedemo site', () => {
-  cy.log(LoginPage);
   LoginPage.visit();
   LoginPage.inputUsername().type(Cypress.env('username'));
   LoginPage.inputPassword().type(Cypress.env('password'));
