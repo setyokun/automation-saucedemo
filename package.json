@@ -26,9 +26,6 @@
       "outputFolder": "cypress/support/cucumber-json",
       "filePrefix": "",
       "fileSuffix": ".cucumber"
-    }, 
-    "html": {
-      "enabled": true
     }
   }
 }

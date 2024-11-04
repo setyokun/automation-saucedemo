@@ -8,6 +8,10 @@ class InventoryPage {
         return cy.get('.inventory_details_name');
     }
 
+    getPrice() {
+        return cy.get('.inventory_details_price');
+    }
+
     addToCart() {
       return cy.get('#add-to-cart');
     }
@@ -23,7 +27,5 @@ class InventoryPage {
     getSideMenu() {
         return cy.get('.bm-menu-wrap');
     }
-
-    
 }
 export default new InventoryPage();
