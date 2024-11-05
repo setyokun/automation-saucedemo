@@ -6,3 +6,5 @@ Feature: Add Item Flow
     When User add 1 item to cart
     Then User should see the same item in the cart page
     And User should see the icon cart increase to 1
+    When User checkout the item selected
+    Then User should see the successfully checkout message

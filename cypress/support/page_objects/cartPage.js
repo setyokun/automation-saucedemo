@@ -12,5 +12,9 @@ class CartPage {
         return cy.get('.shopping_cart_badge');
     }
 
+    checkoutButton() {
+        return cy.get('#checkout');
+    }
+
 }
 export default new CartPage();

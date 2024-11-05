@@ -2,10 +2,10 @@ import {  Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import LoginPage from "../page_objects/loginPage";
 import InventoryPage from "../page_objects/inventoryPage";
 import CartPage from "../page_objects/cartPage";
+import CheckoutPage from "../page_objects/checkoutPage";
 let detailName = '';
 let price = '';
 let cart = '';
-
 
 Given('User login on the saucedemo site', () => {
   LoginPage.visit();
@@ -47,5 +47,23 @@ And('User should see the icon cart increase to {int}', (number) => {
     cart = parseInt(text);       
     expect(cart).to.equal(number);
   });
+})
+
+When('User checkout the item selected', () => {    
+  CartPage.checkoutButton().click();
+  cy.fixture('userData').then((data) => {
+    CheckoutPage.inputFirstname().type(data.firstname);
+    CheckoutPage.inputLastname().type(data.lastname);
+    CheckoutPage.inputPostalCode().type(data.postalCode);
+  })
+  CheckoutPage.continueButton().click();
+  CartPage.getInventoryName().should('have.text', detailName);
+  CartPage.getPrice().should('have.text', price);
+  CheckoutPage.finishButton().click();
+})
+
+Then('User should see the successfully checkout message', () => {    
+  cy.contains('Checkout: Complete!').should('be.visible'); 
+  cy.contains('Thank you for your order!').should('be.visible'); 
 })
 
